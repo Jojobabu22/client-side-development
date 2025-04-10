@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #f3e5d8;
+    color: #3e2a47;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease;
+}
+
+h1, h2 {
+    color: #3e2a47;
+    margin-bottom: 0.5em;
+    font-family: 'Georgia', serif;
+    animation: fadeIn 2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #fff0e1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #d4a79d;
+    animation: slideDown 1s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #3e2a47;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links li a:hover {
+    color: #d4a79d;
+}
+
+/* Three-dot dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    font-size: 1.5em;
+    color: #3e2a47;
+    cursor: pointer;
+    padding-left: 1em;
+    user-select: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #d4a79d;
+    border-radius: 6px;
+    z-index: 1001;
+    font-family: 'Georgia', serif;
+    animation: fadeIn 0.3s ease;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.8em 1em;
+    color: #3e2a47;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4e1d2;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Login Section */
+.login-section {
+    background-color: #f7e1c8;
+    padding: 2em 1em;
+    text-align: center;
+    background-image: url('https://www.transparenttextures.com/patterns/pw-maze.png');
+    animation: fadeInUp 1.5s ease;
+}
+
+.login-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #e2b7a1;
+    animation: zoomIn 1.5s ease;
+}
+
+.login-container h2 {
+    margin-bottom: 0.5em;
+    color: #3e2a47;
+}
+
+.login-container input {
+    width: 70%;
+    padding: 1em;
+    margin: 0.5em 0;
+    border: 1px solid #d4a79d;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+    background-color: #f4e1d2;
+    transition: box-shadow 0.3s;
+}
+
+.login-container input:focus {
+    box-shadow: 0 0 5px #d4a79d;
+}
+
+.login-container .btn {
+    width: 70%;
+    margin-top: 1em;
+    background-color: #3e2a47;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    border-radius: 6px;
+    padding: 0.8em 1.5em;
+    transition: background-color 0.3s;
+}
+
+.login-container .btn:hover {
+    background-color: #d4a79d;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5em 2em;
+    background-color: #f7e1c8;
+    background-image: url('https://www.transparenttextures.com/patterns/old-map.png');
+    color: #3e2a47;
+    font-family: 'Georgia', serif;
+    animation: fadeIn 2s ease;
+}
+
+/* Product Section */
+.product-section {
+    padding: 3em 2em;
+    text-align: center;
+    background-color: #f4e1d2;
+    animation: fadeInUp 1s ease;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e2b7a1;
+    width: 300px;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-section {
+    padding: 3em 2em;
+    background-color: #f9f9ff;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    animation: fadeIn 2s ease;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 3em 2em;
+    text-align: center;
+    animation: fadeInUp 1.5s ease;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 1em;
+    border: 1px solid #d4a79d;
+    border-radius: 6px;
+    font-family: 'Georgia', serif;
+    background-color: #f4e1d2;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    box-shadow: 0 0 5px #d4a79d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5em;
+    background-color: #f7e1c8;
+    border-top: 1px solid #d4a79d;
+    color: #3e2a47;
+    animation: fadeIn 2s ease;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.6em 1.2em;
+    background-color: #3e2a47;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #d4a79d;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}

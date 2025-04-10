@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThriftNest - Login</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">ThriftNest</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+        margin: 0;
+        padding: 20px;
+      }
+  
+      h1 {
+        text-align: center;
+        color: #2e8b57;
+        margin-bottom: 40px;
+      }
+  
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+  
+      .product-card {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+  
+      .product-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+  
+      .product-card h3 {
+        font-size: 1.2rem;
+        margin: 10px 0 5px;
+      }
+  
+      .product-card p {
+        font-size: 1rem;
+        color: #555;
+      }
+  
+      .price {
+        font-weight: bold;
+        color: #2e8b57;
+      }
+  
+      .btn {
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #2e8b57;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+      }
+  
+      .btn:hover {
+        background-color: #246b45;
+      }
+      .highlight {
+      color: #2e8b57;
+      font-weight: bold;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #3b3b3b;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #5c5c5c;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin: 15px 0;
+    }
+
+    </style>
+  </head>
+  <body>
+  
+    <h1>🛍 Shop Our Picks</h1>
+  
+    <div class="product-grid">
+  
+      <div class="product-card">
+        <img src="images/white tshirt.jpg" />
+        <h3>white shirt</h3>
+        <p class="price">$25.00</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+  
+      <div class="product-card">
+        <img src="images/bag.jpg" alt="vintage bag" />
+        <h3>Floral Summer bag</h3>
+        <p class="price">$18.00</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+  
+      <div class="product-card">
+        <img src="images/casual bag.jpg" alt="casual bag" />
+        <h3>Casual bag</h3>
+        <p class="price">$20.00</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+  
+      <div class="product-card">
+        <img src="images/shoes.jpg" alt="shoes" />
+        <h3>classic shoe</h3>
+        <p class="price">$22.00</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+  
+    </div>
+
+  <!-- Login Section -->
+  <section class="login-section" id="login-section">
+    <div class="login-container">
+      <h2>Login to ThriftNest</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#">Register here</a></p>
+      <p id="login-error" style="color: red; display: none;">Please enter a valid email and password.</p>
+      <label><input type="checkbox" id="remember-me"> Remember Me</label>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Preloved. Affordable. Sustainable.</h1>
+    <p>Find unique fashion and home items at amazing prices.</p>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+
+  <!-- JS Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
